@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.Light-on {
+  background-color: black;
+  color: white;
+}
+
+.Light-off {
+  background-color: white;
+  color: black;
+}
