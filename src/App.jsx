@@ -1,19 +1,18 @@
 import { useState } from "react";
 import "./App.css";
+import MyComponent from "./assets/Component/MyComponent";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [state, setState] = useState(false);
 
-  console.log(count);
-
-  const handleIncrement = () => {
-    setCount((prevElement) => prevElement + 1);
+  const onClickHandler = () => {
+    setState((prev) => !prev);
   };
-
   return (
     <>
-      <h1>{count}</h1>
-      <button onClick={handleIncrement}>damachire</button>
+      <h1>hello world</h1>
+      {state && <MyComponent />}
+      <button onClick={onClickHandler}>click me</button>
     </>
   );
 }
